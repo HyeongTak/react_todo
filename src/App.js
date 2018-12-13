@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { observable, action } from 'mobx';
+import { observer } from 'mobx-react';
+
 import TodoListTemplate from './components/TodoListTemplate';
 import Form from './components/Form';
 import TodoItemList from './components/TodoItemList';
@@ -6,6 +9,7 @@ import Palette from './components/Palette';
 
 
 const colors = ['#343a40', '#f03e3e', '#12b886', '#228ae6'];
+
 
 class App extends Component {
 
